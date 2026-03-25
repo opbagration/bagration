@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    
+    <title>Операция Багратион — Лонгрид</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="progress-bar"></div>
+
+<button id="menu-toggle" aria-label="Открыть оглавление">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</button>
+
+<nav id="toc-menu">
+    <div class="toc-content">
+        <h3>Оглавление</h3>
+        <ul>
+            <li><a href="#chap-1">1. «Белорусский балкон»: Иллюзия неприступности</a></li>
+            <li><a href="#chap-2">2. План Рокоссовского: Цена одного решения</a></li>
+            <li><a href="#chap-3">3. Искусство обмана и марш в «Мокроступах»</a></li>
+            <li><a href="#chap-4">4. «Рельсовая война»: Удар в спину Вермахту</a></li>
+            <li><a href="#chap-5">5. Хроника разгрома: Детализация наступления</a></li>
+            <li><a href="#chap-6">6. «Большой вальс»: Парад побежденных в Москве</a></li>
+            <li><a href="#chap-7">7. Мифы и реальность: Истинная цена победы и манипуляции со статистикой</a></li>
+            <li><a href="#chap-8">8. Итоги и историческое значение операции</a></li>
+            <li><a href="#chap-9">9. Полководцы Победы</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-content" data-aos="fade-up">
+        <h1>Операция «Багратион»</h1>
+        <p>Гроссмейстерский триумф советского военного искусства</p>
+        <span>23 июня — 29 августа 1944 года</span>
+    </div>
+    <div class="scroll-arrow">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+        </svg>
+    </div>
+</section>
+
+<section class="balcony" id="chap-1">
+    <div class="container h-100 flex-center">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-number">01</span>
+            <h2>«Белорусский балкон»: Иллюзия неприступности</h2>
+        </div>
+        <div class="columns">
+            <div class="text-side" data-aos="fade-right">
+                <p>К началу лета 1944 года линия советско-германского фронта приобрела причудливые очертания. В центре, на территории оккупированной Белоруссии, образовался гигантский выступ площадью около 250 тысяч квадратных километров, глубоко вдававшийся в советские позиции. В штабных документах этот стратегический плацдарм получил название «Белорусский балкон». Его восточная граница проходила угрожающе близко от Москвы — всего в 80 километрах от Смоленска.</p>
+                <p>Однако немецкое Верховное командование сухопутных войск и лично Адольф Гитлер пребывали в опасной иллюзии безопасности. Аналитики вермахта были твердо убеждены: летом Красная Армия нанесет свой главный удар на юге. Логика немцев казалась железной — Советскому Союзу необходимо отрезать Германию от румынских нефтяных полей и прорваться на Балканы.</p>
+                <p>Белорусское же направление считалось второстепенным. Причина крылась в географии: сложнейшая лесисто-болотистая местность Полесья со множеством рек казалась абсолютно непригодной для глубоких прорывов и действий крупных танковых соединений.</p>
+            </div>
+            <div class="image-side mobile-only-img" data-aos="fade-top">
+                <img src="images/balcony-mobile-transparent4.png" id="mobile-balcony-image" alt="Белорусский балкон">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="separator-quote">
+    <div class="container h-100 flex-center">
+        <h2 id="quote-first-h2" data-aos="fade-up">Немецкий генерал и военный историк Курт фон Типпельскирх позже напишет в своих мемуарах об этом фатальном просчете:</h2>
+        <blockquote data-aos="zoom-in">
+            «Гитлер и его Генеральный штаб были загипнотизированы ожиданием наступления русских на юге... То, что произошло потом в Белоруссии, стало для нас громом среди ясного неба. Никто не верил, что русские смогут провести крупномасштабное наступление через эти непроходимые болота».
+            <div class="quote-author">
+                <img src="images/tippelskirch.jpg" alt="Курт фон Типпельскирх">
+                <cite>— Курт фон Типпельскирх</cite>
+            </div>
+        </blockquote>
+        <h2 id="quote-third-h2" data-aos="fade-up" data-aos-delay="200">Именно этот колоссальный стратегический просчет противника лег в основу дерзкого замысла советского Генерального штаба. 30 мая 1944 года И.В. Сталин утвердил окончательный план разгрома группы армий «Центр».</h2>
+    </div>
+</section>
+
+<section class="rokossovsky fullscreen-dialogue" id="chap-2">
+    <div class="dialogue-bg-overlay"></div>
+    <div class="container relative-z h-100 flex-center">
+        <div class="section-header" data-aos="fade-down">
+            <span class="section-number">02</span>
+            <h2>План Рокоссовского: Цена одного решения</h2>
+        </div>
+        
+        <div class="dialogue-intro" data-aos="fade-up">
+            <p class="text-center text-light">Классическая военная стратегия непреклонно требовала концентрации сил для нанесения одного максимально мощного главного удара. Однако Рокоссовский, изучив топи под Бобруйском, настоял на <strong>двух главных ударах</strong> равной силы. Болотистая почва не позволила бы сосредоточить всю бронетехнику на одном участке, а два синхронных удара парализовали бы немецкие резервы.</p>
+        </div>
+
+        <div class="chat-container" id="dialogue-trigger">
+            <div class="bubble rokossovsky-bubble opacity-0" id="msg-1">
+                <img src="images/rokossovsky-icon.jpg" alt="Рокоссовский" class="avatar">
+                <div class="message-content">
+                    <div class="typing-indicator"><span></span><span></span><span></span></div>
+                    <div class="msg-text hidden">«Товарищ Сталин, я настаиваю на двух главных ударах. Болота под Бобруйском не пропустят одну большую колонну техники — мы просто застрянем».</div>
+                </div>
+            </div>
+
+            <div class="bubble stalin-bubble opacity-0" id="msg-2">
+                <div class="message-content">
+                    <div class="typing-indicator"><span></span><span></span><span></span></div>
+                    <div class="msg-text hidden">«Генерал Рокоссовский, выйдите в соседнюю комнату и еще раз хорошенько обдумайте свое предложение. Мы ждем одного мощного удара».</div>
+                </div>
+                <img src="images/stalin-icon.jpg" alt="Сталин" class="avatar">
+            </div>
+
+            <div class="bubble rokossovsky-bubble opacity-0" id="msg-3">
+                <img src="images/rokossovsky-icon.jpg" alt="Рокоссовский" class="avatar">
+                <div class="message-content">
+                    <div class="typing-indicator"><span></span><span></span><span></span></div>
+                    <div class="msg-text hidden">«Я подумал, товарищ Сталин. И всё же два удара. Это единственный верный вариант в этих тяжелых условиях».</div>
+                </div>
+            </div>
+
+            <div class="bubble stalin-bubble opacity-0" id="msg-4">
+                <div class="message-content">
+                    <div class="typing-indicator"><span></span><span></span><span></span></div>
+                    <div class="msg-text hidden">«Настойчивость командующего фронтом доказывает, что организация наступления продумана тщательно. Утверждаю».</div>
+                </div>
+                <img src="images/stalin-icon.jpg" alt="Сталин" class="avatar">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="masking-parallax" id="chap-3">
+    <div class="parallax-bg"></div>
+    <div class="container content-overlay h-100 flex-center">
+        <div class="section-header" data-aos="fade-down">
+            <span class="section-number">03</span>
+            <h2>Искусство обмана и марш в «Мокроступах»</h2>
+        </div>
+
+        <div class="intro-text text-center" data-aos="fade-up">
+            <p>Гениальный план остался бы лишь на бумаге без беспрецедентных мер оперативной маскировки. В западной военной науке советский термин Maskirovka стал нарицательным, и именно «Багратион» считается вершиной этого искусства. Успех ковался в абсолютной тишине.</p>
+        </div>
+
+        <div class="cards-wrapper flex-columns">
+            <div class="big-card maskirovka3" data-aos="fade-right">
+                <div class="card-text">
+                    <h3>Игра в «кошки-мышки»</h3>
+                    <p>Пока на южном фланге фронта открыто имитировали сосредоточение ударных танковых армий и строили сотни фанерных макетов танков, в белорусских лесах шла скрытая подготовка реального удара. Переброска осуществлялась исключительно ночью. С рассветом техника маскировалась, следы гусениц заметались, а в войсках был введен жесточайший режим радиомолчания.</p>
+                </div>
+                
+            </div>
+
+            <div class="big-card mokrostupi" data-aos="fade-left">
+                <div class="card-text">
+                    <h3>Инженерный подвиг</h3>
+                    <p>Пехотинцев учили передвигаться по трясине. Инженерные части изготовили десятки тысяч «мокроступов» — плетеных из лозы болотных лыж, а для пулеметов вязали лодочки-волокуши. Саперы по ночам по грудь в воде укладывали <strong>гати</strong> — деревянные настилы для скрытых дорог танков Т-34.</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="bush-note" data-aos="zoom-in">
+            <p>Командующий генерал-фельдмаршал Эрнст Буш был настолько уверен в тишине и невозможности наступления через болота, что за пару дней до катастрофы отбыл в отпуск в Германию.</p>
+        </div>
+    </div>
+</section>
+
+<section class="rail-war" id="chap-4">
+    <div class="container h-100 flex-center">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-number">04</span>
+            <h2>«Рельсовая война»: Удар в спину Вермахту</h2>
+            <p class="lead-text">Гром артиллерии регулярной армии предварила неслыханная по масштабам диверсионная акция, скрупулезно спланированная штабом партизанского движения.</p>
+        </div>
+
+        <div class="full-width-image" data-aos="zoom-in">
+            <img src="images/partizan.jpg" alt="Партизаны взрывают пути" class="main-img">
+        </div>
+
+        <div class="rail-stats" data-aos="fade-up">
+            <div class="stat-item"><span class="stat-value">140 000+</span><span class="stat-label">Партизан</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat-item"><span class="stat-value">40 000+</span><span class="stat-label">Рельсов в 1-ю ночь</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat-item"><span class="stat-value">Паралич</span><span class="stat-label">Всей логистики</span></div>
+        </div>
+
+        <div class="rail-grid">
+            <div class="rail-card" data-aos="fade-up">
+                <h3>Логистический вакуум</h3>
+                <p>Массово подрывались водокачки. Без воды паровозы превращались в груду железа, войска не могли маневрировать и подвозить снаряды.</p>
+            </div>
+            <div class="rail-card" data-aos="fade-up" data-aos-delay="100">
+                <h3>Обрыв артерий</h3>
+                <p>Взлетали на воздух мосты и железнодорожные стрелки. Немецкие дивизии оказались скованы в своих секторах еще до перехода танков в атаку.</p>
+            </div>
+            <div class="rail-card" data-aos="fade-up" data-aos-delay="200">
+                <h3>Слепота штабов</h3>
+                <p>Вырезались километры телефонного и телеграфного кабеля. Хайнц Гудериан признавал: «Мы оказались в положении слепых и глухих».</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="chronicle-timeline-section long-text" id="chap-5">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-number">05</span>
+            <h2>Хроника разгрома: Детализация наступления</h2>
+            <p class="lead-text">Стратегическая операция не была монолитным ударом — она представляла собой сложный часовой механизм из взаимосвязанных фронтовых операций.</p>
+        </div>
+
+        <h3 class="phase-title" data-aos="zoom-in">Этап I: Прорыв оборонительных линий (23 июня — 4 июля)</h3>
+
+        <div class="timeline">
+            <div class="timeline-line"></div>
+
+            <div class="timeline-item left" data-aos="fade-right">
+                <div class="timeline-content">
+                    <div class="date">23–28 июня</div>
+                    <h3>Витебско-Оршанская операция</h3>
+                    <p>Войска 1-го Прибалтийского (И. Х. Баграмян) и 3-го Белорусского (И. Д. Черняховский) фронтов нанесли сокрушительный удар на северном фасе «балкона». 25 июня сомкнулось стальное кольцо вокруг витебской группировки. В «Витебском котле» полностью уничтожены 5 немецких дивизий (35 тыс. человек). Одновременно взят узел Орша, открывший автостраду на Минск.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item right" data-aos="fade-left">
+                <div class="timeline-content">
+                    <div class="date">23–28 июня</div>
+                    <h3>Могилёвская операция</h3>
+                    <p>В центре 2-й Белорусский фронт генерала Г. Ф. Захарова прорвал глубоко эшелонированную оборону немцев по рекам Проня и Днепр. Сходу форсировав реку, советские войска 28 июня освободили Могилёв, лишив противника возможности закрепиться на важнейшем водном рубеже.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item left" data-aos="fade-right">
+                <div class="timeline-content">
+                    <div class="date">24–29 июня</div>
+                    <h3>Бобруйская операция</h3>
+                    <p>Блестяще сработал план Рокоссовского на южном фланге (1-й Белорусский фронт). Два мощных сходящихся удара через гати и болота застали 9-ю немецкую армию врасплох. 27 июня ловушка захлопнулась: в котле оказались 6 дивизий вермахта (около 40 тысяч человек). Попытки прорыва пресекались штурмовой авиацией.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item right highlight-item" data-aos="fade-left">
+                <div class="timeline-content">
+                    <div class="date">29 июня — 4 июля</div>
+                    <h3>Минская операция (Кульминация)</h3>
+                    <p>Прорвав фланги, советские мобильные соединения (в том числе 5-я гвардейская танковая армия П. А. Ротмистрова) устремились к столице Белоруссии, беря отступающие части в гигантские клещи. 3 июля танки ворвались в Минск. Заблокирована и уничтожена 105-тысячная группировка 4-й немецкой армии.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mid-quote" data-aos="zoom-in">
+            <p>«То, что произошло между Днепром и Березиной летом 1944 года, было не просто поражением. Это было уничтожение целой армии, катастрофа, превзошедшая Сталинград»</p>
+            <div class="quote-author">
+                
+                <cite>— Немецкий историк Вернер Хаупт</cite>
+            </div>
+        </div>
+
+        <h3 class="phase-title" data-aos="zoom-in">Этап II: Неудержимое преследование (5 июля — 29 августа)</h3>
+        
+        <div class="timeline">
+            <div class="timeline-line"></div>
+
+            <div class="timeline-item left" data-aos="fade-right">
+                <div class="timeline-content">
+                    <div class="date">Июль — Август</div>
+                    <h3>Прибалтийское направление</h3>
+                    <p>Советские войска освободили Вильнюс (13 июля) и Каунас (1 августа). Войска 1-го Прибалтийского фронта прорвались к Рижскому заливу, отрезав немецкую группу армий «Север» от Восточной Пруссии. Темпы преследования достигали 20–30 километров в сутки.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item right" data-aos="fade-left">
+                <div class="timeline-content">
+                    <div class="date">Июль — Август</div>
+                    <h3>Польское направление</h3>
+                    <p>Войска Рокоссовского освободили Брест и стремительно вышли к реке Висле на территории Польши. Сходу форсировав реку, советские части захватили стратегически важные плацдармы (Магнушевский и Пулавский). К концу августа фронт отодвинулся на запад на 600 километров.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="big-waltz relative-z" id="chap-6">
+    <div class="container relative-z">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-number">06</span>
+            <h2>«Большой вальс»: Парад побежденных в Москве</h2>
+        </div>
+        <div class="mobile-only-img" data-aos="fade-top">
+                <img src="images/waltz2.png" class="mobile-only-img" id="mobile-waltz-image" alt="Белорусский балкон">
+            </div>
+        <div class="waltz-description text-center-box" data-aos="fade-up">
+            <p>Чтобы продемонстрировать всему миру катастрофу вермахта, 17 июля 1944 года в Москве состоялась операция «Большой вальс». По улицам столицы провели огромную колонну немецких военнопленных, захваченных в Белоруссии — 57 600 человек. Во главе колонны шли 19 генералов вермахта при орденах — те самые люди, что мечтали пройти по Москве победным маршем в 1941-м.</p>
+            <p class="emotional-accent" data-aos="zoom-in">Зрители наблюдали за шествием в гробовом молчании. А сразу за пленными ехали поливальные машины, демонстративно смывая с асфальта «фашистскую грязь».</p>
+        </div>
+    </div>
+</section>
+
+<section class="analysis-section" id="chap-7">
+    <div class="container h-100 flex-center">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-number">07</span>
+            <h2 class="dark-text">Мифы и реальность: Истинная цена победы и манипуляции со статистикой</h2>
+        </div>
+
+        <div class="facts-grid">
+            <div class="fact-item" data-aos="fade-right">
+                <h3 class="red-text">Манипуляции с «боевым составом»</h3>
+                <p>Многие западные историки пытались сгладить горечь поражения путем прямой манипуляции цифрами. Они утверждают, что в группе армий «Центр» было всего около 486–850 тысяч человек. Секрет лжи прост: немецкие мемуаристы считали исключительно «боевые пайки» — то есть только солдат стрелковых рот на передовой. Из расчетов намеренно исключались артиллеристы, связисты, саперы, штабы, гигантские тыловые службы и части СС. Реальная группировка противника составляла от 1,2 до 2 миллионов человек.</p>
+            </div>
+
+            <div class="chart-box" data-aos="zoom-in">
+                <h4>Численность войск (чел.)</h4>
+                <div class="bar-chart">
+                    <div class="bar-item"><div class="bar myth" style="height: 40%;"><span>486-850 тыс</span></div><label>Миф</label></div>
+                    <div class="bar-item"><div class="bar reality" style="height: 100%;"><span>1.2-2 млн</span></div><label>Реальность</label></div>
+                </div>
+            </div>
+
+            <div class="fact-item" data-aos="fade-right" data-aos-delay="100">
+                <h3 class="red-text">Истинные масштабы потерь</h3>
+                <p>Поражение было тотальным. Только безвозвратные потери немецкой стороны оцениваются в 400 000 – 550 000 человек, что значительно превышает потери вермахта под Сталинградом. Полностью, вместе со штабами, было уничтожено 17 дивизий и 3 бригады. Безвозвратные потери четырех фронтов Красной Армии составили 178 507 человек — около 7,6% от общей численности советских войск, участвовавших в операции. Это убедительно доказывает высочайший уровень полководческого мастерства.</p>
+            </div>
+
+            <div class="chart-box" data-aos="zoom-in" data-aos-delay="100">
+                <h4>Безвозвратные потери (чел.)</h4>
+                <div class="bar-chart">
+                    <div class="bar-item"><div class="bar losses-de" style="height: 100%;"><span>400-550 тыс</span></div><label>Вермахт</label></div>
+                    <div class="bar-item"><div class="bar losses-su" style="height: 35%;"><span>178.5 тыс</span></div><label>СССР</label></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="results-section" id="chap-8">
+    <div class="container h-100 flex-center">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-number">08</span>
+            <h2>Итоги и историческое значение операции</h2>
+        </div>
+        
+        <div class="results-grid">
+            <div class="result-item" data-aos="fade-up" data-aos-delay="100">
+                <span class="big-number">1</span>
+                <h3>Военно-стратегический крах Рейха</h3>
+                <p>Вермахт понес тяжелейшие потери за всю свою историю. Огромная брешь в центре Восточного фронта (около 400 км по фронту и 600 км в глубину) не могла быть закрыта.</p>
+            </div>
+            
+            <div class="result-item" data-aos="fade-up" data-aos-delay="200">
+                <span class="big-number">2</span>
+                <h3>Освобождение территорий</h3>
+                <p>Красная Армия полностью освободила Белоруссию, часть Прибалтики и восточные районы Польши, выйдя на ближние подступы к границам самой Германии.</p>
+            </div>
+
+            <div class="result-item" data-aos="fade-up" data-aos-delay="300">
+                <span class="big-number">3</span>
+                <h3>Помощь союзникам (Второй фронт)</h3>
+                <p>Наступление заставило Гитлера экстренно стягивать резервы с Запада на Восток, спасая фронт от полного обрушения. Это сорвало планы удара по англо-американским войскам и значительно облегчило задачу союзникам во Франции (операция «Оверлорд»).</p>
+            </div>
+            
+            <div class="result-item" data-aos="fade-up" data-aos-delay="400">
+                <span class="big-number">4</span>
+                <h3>Триумф советского военного искусства</h3>
+                <p>Операция стала классическим примером реализации теории «глубокой наступательной операции». Идеальная координация пехоты, танковых армий, авиации и партизан доказала, что Красная Армия — это высокотехнологичная и непреодолимая сила.</p>
+            </div>
+        </div>
+
+        <blockquote class="final-quote" data-aos="zoom-in">
+            <p>«В истории войн трудно найти операцию, которая по своим масштабам, стремительности и результатам могла бы сравниться с Белорусской. Она была проведена с исключительным искусством и стала подлинным шедевром стратегии».</p>
+            <div class="quote-author">
+                <img src="images/zhukov-icon.jpg" alt="Г. К. Жуков">
+                <cite>— Маршал Советского Союза Г. К. Жуков</cite>
+            </div>
+        </blockquote>
+    </div>
+</section>
+
+<section class="commanders-section" id="chap-9">
+    <div class="container h-100 flex-center">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-number">09</span>
+            <h2>Полководцы Победы</h2>
+            <p class="lead-text">Этот триумф стал звездным часом советских военачальников.</p>
+        </div>
+        
+        <div class="commanders-main">
+            <div class="commander-card large" data-aos="zoom-in">
+                <img src="images/zhukov-icon.jpg" alt="Жуков">
+                <div class="commander-info"><h4>Г. К. Жуков</h4></div>
+            </div>
+            <div class="commander-card large" data-aos="zoom-in">
+                <img src="images/vasilevsky.jpg" alt="Василевский">
+                <div class="commander-info"><h4>А. М. Василевский</h4></div>
+            </div>
+        </div>
+
+        <div class="commanders-grid">
+            <div class="commander-card" data-aos="fade-up">
+                <img src="images/bagramyan.jpg" alt="И. Х. Баграмян">
+                <div class="commander-info"><h4>И. Х. Баграмян</h4></div>
+            </div>
+            <div class="commander-card" data-aos="fade-up">
+                <img src="images/chernyahovsky.jpg" alt="И. Д. Черняховский">
+                <div class="commander-info"><h4>И. Д. Черняховский</h4></div>
+            </div>
+            <div class="commander-card" data-aos="fade-up">
+                <img src="images/zakharov.jpg" alt="Г. Ф. Захаров">
+                <div class="commander-info"><h4>Г. Ф. Захаров</h4></div>
+            </div>
+            <div class="commander-card" data-aos="fade-up">
+                <img src="images/rokossovsky-icon.jpg" alt="К. К. Рокоссовский">
+                <div class="commander-info"><h4>К. К. Рокоссовский</h4></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="sources">
+                <h5>Источники:</h5>
+                <ul>
+                    <li>Журнал «Историк», Олег Назаров</li>
+                    <li>Энциклопедия «Всемирная история»</li>
+                    <li>ФСБ России</li>
+                    <li>КиберЛенинка / Военная мысль</li>
+                    <li>Рокоссовский К. К. Солдатский долг</li>
+                    <li>Типпельскирх К. История Второй мировой войны</li>
+                    <li>Гудериан Х. Воспоминания солдата</li>
+                    <li>Великая Война. 11 Серия. Операция Багратион.</li>
+                </ul>
+            </div>
+            <div class="copyright"><p>© 2026 Проект подготовил студент ФГБОУ ВО «БГУ» группы ИС-25-П Шумаков М.А.</p></div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ duration: 800, once: false, offset: 20 });
+    const observerOptions = { threshold: 0.4 };
+    let hasTyped = false;
+    function showMessage(msgId, delay, callback) {
+        const bubble = document.getElementById(msgId);
+        if(!bubble) return;
+        bubble.classList.remove('opacity-0');
+        bubble.classList.add('fade-in-bubble');
+        setTimeout(() => {
+            bubble.querySelector('.typing-indicator').classList.add('hidden');
+            bubble.querySelector('.msg-text').classList.remove('hidden');
+            if(callback) setTimeout(callback, 1000); 
+        }, delay);
+    }
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !hasTyped) {
+                hasTyped = true;
+                showMessage('msg-1', 6000, () => showMessage('msg-2', 4000, () => showMessage('msg-3', 8000, () => showMessage('msg-4', 3000))));
+            }
+        });
+    }, observerOptions);
+    if(document.getElementById('dialogue-trigger')) observer.observe(document.getElementById('dialogue-trigger'));
+
+        
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        
+        const progress = (scrollTop / scrollHeight) * 100;
+        document.getElementById('progress-bar').style.width = progress + '%';
+    });
+
+    
+    const menuToggle = document.getElementById('menu-toggle');
+    const tocMenu = document.getElementById('toc-menu');
+    const tocLinks = document.querySelectorAll('.toc-content a');
+
+    
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        tocMenu.classList.toggle('active');
+    });
+
+    
+    tocLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            menuToggle.classList.remove('active');
+            tocMenu.classList.remove('active');
+        });
+    });
+</script>
+</body>
+</html>
